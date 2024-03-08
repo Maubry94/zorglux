@@ -4,44 +4,31 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 export default component$(() => {
   const startSection = useSignal<Element>();
   const quitButton = useSignal<Element>();
+  const audio = useSignal<HTMLAudioElement>();
   const started = useSignal(false);
 
   const start = $(() => {
     started.value = true;
+    audio.value.play();
   });
 
   const stop = $(() => {
+    audio.value.pause();
+    audio.value.currentTime = 0;
     started.value = false;
   });
 
   return (
-    <main
-      class="relative w-screen h-screen flex justify-center items-center font-news-cycle font-bold tracking-widest text-yellow overflow-hidden"
+    <div
+      class="w-screen h-screen flex justify-center items-center font-news-cycle font-bold tracking-widest text-yellow overflow-hidden"
     >
-      {/* <button
-        ref={quitButton}
-        onClick$={stop}
-        class={["absolute top-0 left-0 p-4 text-yellow bg-skyblue", started.value ? "block" : "hidden"]}
-      >
-        Quitter
-      </button>
-      <section
-        ref={startSection}
-        onClick$={start} class={["cursor-pointer", !started.value ? "block" : "hidden"]}
-      >
-        <p class="text-2xl">
-          Cliquez ici pour découvrir
-          <br />
-          <span class="text-skyblue">La fabuleuse histoire des Zorglux</span>
-        </p>
-      </section> */}
+      <button onClick$={stop} ref={quitButton} class={["quit", started.value ? "block" : "hidden"]}>Quitter</button>
+
       <article class="starwars">
-        <audio preload="auto">
+        <audio ref={audio} preload="auto">
           <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg" type="audio/ogg" />
           <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg" />
         </audio>
-
-        <button class="quit" onClick$={stop} ref={quitButton}>Quitter</button>
 
         <section onClick$={start} ref={startSection} class={["start", !started.value ? "block" : "hidden"]}>
           <p>
@@ -97,7 +84,7 @@ export default component$(() => {
           </section>
         </div>
       </article>
-    </main>
+    </div>
   );
 });
 
