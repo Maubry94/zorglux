@@ -12,7 +12,7 @@ export default component$(() => {
   return (
     <div>
       <Breadcrumb labels={breadcrumbs} />
-      <section class="max-w-7xl h-full flex grow flex-col justify-center items-center">
+      <section class="max-w-7xl h-full mb-12 lg:mb-24 flex grow flex-col justify-center items-center">
         <h1 class="mb-10 text-3xl lg:text-5xl text-center text-yellow">
           Avis au peuple <strong>Zorglux</strong>, Êtres Supérieurs !
         </h1>
@@ -41,6 +41,13 @@ export default component$(() => {
           <br />
           <p>Gloire au peuple <strong class="text-yellow">Zorglux</strong> !</p>
         </article>
+      </section>
+      <section class="max-w-7xl h-full flex grow flex-col justify-center items-center">
+        <h2 class="mb-8 text-xl lg:text-3xl text-center text-yellow">Notre réponse face aux imposteurs</h2>
+        <video controls class=" h-96 lg:h-auto rounded-lg">
+          <source src="/videos/Chute_des_Usurpateurs.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
       </section>
     </div>
   );
