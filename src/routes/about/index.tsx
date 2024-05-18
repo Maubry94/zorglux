@@ -44,8 +44,8 @@ export default component$(() => {
               onEnded$={stop}
               preload="auto"
             >
-              <source src="/musics/star-wars-opening-1977.ogg" type="audio/ogg" />
-              <source src="/musics/star-wars-opening-1977.mp3" type="audio/mpeg" />
+              <source src="/audios/star-wars-opening-1977.ogg" type="audio/ogg" />
+              <source src="/audios/star-wars-opening-1977.mp3" type="audio/mpeg" />
             </audio>
 
             <button
