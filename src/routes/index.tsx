@@ -3,6 +3,8 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Breadcrumb from "../components/breadcrumb";
 
+import ImgZorgluxSalut from '/images/zorglux/salut.png';
+
 const breadcrumbs = [
   { label: "Accueil", icon: "home" },
 ];
@@ -40,6 +42,8 @@ export default component$(() => {
           </p>
           <br />
           <p>Gloire au peuple <strong class="text-yellow">Zorglux</strong> !</p>
+
+          <img src={ImgZorgluxSalut} alt="Zorglux Salut" width={240} height={240} class="max-h-60 mt-8" />
         </article>
       </section>
       <section class="max-w-7xl h-full flex grow flex-col justify-center items-center">

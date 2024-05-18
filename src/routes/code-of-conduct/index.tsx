@@ -3,7 +3,7 @@ import { type DocumentHead } from "@builder.io/qwik-city";
 
 import Breadcrumb from "../../components/breadcrumb";
 
-import ImgZorgluxSalut from '/images/zorglux/salut.png'
+import ImgZorgluxElder from '/images/zorglux/elder.png';
 
 const breadcrumbs = [
     { label: "Accueil", url: "/", icon: "home" },
@@ -41,7 +41,7 @@ export default component$(() => {
                             planète-mère contre toute intrusion non-<strong class="text-yellow">Zorglux</strong>. La sécurité de notre peuple est
                             primordiale.
                         </li>
-                        <img src={ImgZorgluxSalut} alt="Zorglux Salut" width={240} height={240} class=" max-h-60" />
+                        <img src={ImgZorgluxElder} alt="Zorglux Salut" width={240} height={240} class="max-h-60" />
                         <li class="lg:max-w-[50%]">
                             Respecte l'autorité : Obéis aux ordres de nos dirigeants sans te questionner. Leur
                             sagesse et leur vision nous guident vers un avenir glorieux en tant que peuple
