@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
   "name": "Zorglux - Le peuple suprême",
-  "short_name": "Zorglux suprême",
+  "short_name": "Zorglux",
   "start_url": ".",
   "description": "Site officiel des Zorglux, peuple interstellaire dominant et avancé. Explorez notre civilisation éblouissante, nos réalisations technologiques et notre histoire glorieuse.",
   "icons": [
@@ -16,7 +16,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffd700",
-  "background_color": "#ffd700",
+  "theme_color": "#5c55bb",
+  "background_color": "#5c55bb",
   "display": "standalone"
 }
