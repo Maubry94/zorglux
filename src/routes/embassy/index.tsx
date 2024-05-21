@@ -2,9 +2,8 @@ import { component$ } from "@builder.io/qwik";
 import { type DocumentHead } from "@builder.io/qwik-city";
 
 import Breadcrumb from "../../components/breadcrumb";
-
-import ImgEmbassy from '/images/embassy/embassy.webp';
-import ImgMap from '/images/embassy/map.webp';
+import ImgEmbassy from '~/media/embassy.webp';
+import ImgMap from '~/media/map.webp';
 
 const breadcrumbs = [
     { label: "Accueil", url: "/", icon: "home" },

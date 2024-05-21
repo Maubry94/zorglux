@@ -3,9 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from '@builder.io/qwik-city';
 
 import Breadcrumb from "../components/breadcrumb";
-
-import ImgZorgluxLost from '/images/zorglux/lost.png'
-
+import ImgZorgluxLost from '~/media/lost.png'
 const breadcrumbs = [
     { label: "Accueil", url: "/", icon: "home" },
     { label: "404", icon: "alert-circle" }
