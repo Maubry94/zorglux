@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { type DocumentHead } from "@builder.io/qwik-city";
 
 import Breadcrumb from "../../components/breadcrumb";
-import ImgZorgluxElder from '~/media/elder.png';
+import ImgZorgluxElder from '~/media/zorglux/elder.webp';
 
 const breadcrumbs = [
     { label: "Accueil", url: "/", icon: "home" },

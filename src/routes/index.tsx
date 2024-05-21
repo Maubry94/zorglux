@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Breadcrumb from "../components/breadcrumb";
-import ImgZorgluxSalut from '~/media/salut.png';
+import ImgZorgluxSalut from '~/media/zorglux/salut.webp';
 
 const breadcrumbs = [
   { label: "Accueil", icon: "home" },
@@ -47,7 +47,7 @@ export default component$(() => {
       </section>
       <section class="max-w-7xl h-full flex grow flex-col justify-center items-center">
         <h2 class="mb-8 text-xl lg:text-3xl text-center text-yellow">Notre réponse face aux imposteurs</h2>
-        <video controls poster="/images/zorglux/2zglux-thumbnail.png" class=" h-96 lg:h-auto rounded-lg">
+        <video controls poster="/images/zorglux/2zglux-thumbnail.webp" class=" h-96 lg:h-auto rounded-lg">
           <source src="/videos/Chute_des_Usurpateurs.mp4" type="video/mp4" />
           Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
