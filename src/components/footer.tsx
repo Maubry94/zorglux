@@ -30,27 +30,27 @@ export default component$(() => {
       <nav class="flex-1">
         <ul class="h-full flex flex-col justify-center items-end lg:items-center text-grey">
           <li class="mx-4 flex gap-1 items-center tracking-[4px] hover:text-blue transition-colors">
-            <a href="https://www.facebook.com/" target="_blank">
-              <span class="mdi mdi-facebook text-lg"></span>
-              Facebook
-            </a>
-          </li>
-          <li class="mx-4 flex gap-1 items-center tracking-[4px] hover:text-blue transition-colors">
-            <a href="https://twitter.com/" target="_blank">
+            <a href="https://x.com/Zorglux" target="_blank">
               <span class="mdi mdi-twitter text-lg"></span>
               Twitter
             </a>
           </li>
           <li class="mx-4 flex gap-1 items-center tracking-[4px] hover:text-blue transition-colors">
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/zorglux.officiel/" target="_blank">
               <span class="mdi mdi-instagram text-lg"></span>
               Instagram
             </a>
           </li>
           <li class="mx-4 flex gap-1 items-center tracking-[4px] hover:text-blue transition-colors">
-            <a href="https://www.youtube.com/" target="_blank">
+            <a href="https://www.youtube.com/@ZorgluxOfficiel" target="_blank">
               <span class="mdi mdi-youtube text-lg"></span>
               Youtube
+            </a>
+          </li>
+          <li class="mx-4 flex gap-1 items-center tracking-[4px] hover:text-blue transition-colors">
+            <a href="https://soundcloud.com/zorglux" target="_blank">
+              <span class="mdi mdi-soundcloud text-lg"></span>
+              SoundCloud
             </a>
           </li>
         </ul>
